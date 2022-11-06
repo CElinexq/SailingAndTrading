@@ -67,7 +67,7 @@
 		<AllSellingProduct>8,9,4,12,11,6</AllSellingProduct>
 		<Coordination>
 			<XCoord>25</XCoord>
-			<YCoord>2</YCoord>
+			<YCoord>21</YCoord>
 		</Coordination>
 	</Island>
 	<Island>
@@ -107,7 +107,7 @@
 		<AllSellingProduct>12,8,28,29,13,18</AllSellingProduct>
 		<Coordination>
 			<XCoord>65</XCoord>
-			<YCoord>49</YCoord>
+			<YCoord>38</YCoord>
 		</Coordination>
 	</Island>
 	<Island>
@@ -116,8 +116,8 @@
 		<Information>Footbal！！！</Information>
 		<AllSellingProduct>12,24,25,20,23,18</AllSellingProduct>
 		<Coordination>
-			<XCoord>65</XCoord>
-			<YCoord>49</YCoord>
+			<XCoord>35</XCoord>
+			<YCoord>37</YCoord>
 		</Coordination>
 	</Island>
 	<Island>
@@ -136,8 +136,8 @@
 		<Information>妨碍咱的渣渣！气死偶嘞！</Information>
 		<AllSellingProduct>21,8,9,20,27,19</AllSellingProduct>
 		<Coordination>
-			<XCoord>65</XCoord>
-			<YCoord>49</YCoord>
+			<XCoord>89</XCoord>
+			<YCoord>33</YCoord>
 		</Coordination>
 	</Island>
 	<Island>
@@ -146,8 +146,8 @@
 		<Information>Xi jin ping! Give me money! Now!</Information>
 		<AllSellingProduct>14,20,29,8,6,22</AllSellingProduct>
 		<Coordination>
-			<XCoord>80</XCoord>
-			<YCoord>49</YCoord>
+			<XCoord>75</XCoord>
+			<YCoord>22</YCoord>
 		</Coordination>
 	</Island>
 </Islands>
