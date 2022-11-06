@@ -30,23 +30,15 @@ while (flag)
     ship.ShipMoving(Console.ReadKey());
     Console.Clear();
     Map.ShowMap(coordinationList);
-    flag=InIsland(ship);
+    //每步移动后 都检查船和岛屿的位置是否一致，来判断是否进入岛屿
+    flag=ship.InIsland(ship, coordinationList);
 }
     Console.Clear();
     Console.WriteLine("欢迎来到侏罗纪");
 
-//coordinationList.Any(x => x.XCoord == ship.ShipCoord.XCoord && x.YCoord == ship.ShipCoord.YCoord);
 
 
-    //进入岛
-bool InIsland(Ship ship)
-{
-    for(int i = 0; i < coordinationList.Count-1; i++)
-    {
-        if (ship.ShipCoord.XCoord == coordinationList[i].XCoord && ship.ShipCoord.YCoord == coordinationList[i].YCoord)
-        {           
-            return false;
-        }        
-    }
-    return true;
-}
+
+
+
+
