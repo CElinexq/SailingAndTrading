@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SailingAndTrading;
-
+using System.Xml.Linq;
 
 
 
@@ -31,14 +31,15 @@ while (flag)
     Console.Clear();
     Map.ShowMap(coordinationList);
     //每步移动后 都检查船和岛屿的位置是否一致，来判断是否进入岛屿
-    flag=ship.InIsland(ship, coordinationList);
+    flag = ship.InIsland(ship, coordinationList);       //TODO: 这里有问题，ship对象的方法，参数再传一个ship，多此一举。
 }
-    Console.Clear();
-    Console.WriteLine("欢迎来到侏罗纪");
+Console.Clear();
+Console.WriteLine("欢迎来到侏罗纪");
 
 
 
-
-
+//TODO: 下面的代码是教你怎么读取项目中的xml文件
+//XDocument myxml = XDocument.Load(@"RawData\IslandRawData.xml");
+//Console.WriteLine(myxml.Document.ToString()); 
 
 
