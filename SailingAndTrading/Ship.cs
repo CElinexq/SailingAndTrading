@@ -50,19 +50,28 @@ namespace SailingAndTrading
         }
 
         //坐标一致，进入岛
-        public bool InIsland(List<Coordination> coordinationList)
+        public bool InIsland(List<Island> islandList)
         {
-            //8个岛屿位置和船坐标match,如果一致，返回false，进入岛屿
-            for (int i = 0; i < coordinationList.Count - 1; i++)
+            foreach (var island in islandList)
             {
-                //this指当前对象=>ship
-                if (this.ShipCoord.XCoord == coordinationList[i].XCoord && this.ShipCoord.YCoord == coordinationList[i].YCoord)
+                if (this.ShipCoord.XCoord == island.Coordination.XCoord && this.ShipCoord.YCoord == island.Coordination.YCoord)
                 {
                     return false;
                 }
             }
-            //八次都没找到，返回true,继续移动
             return true;
+
+            ////8个岛屿位置和船坐标match,如果一致，返回false，进入岛屿
+            //for (int i = 0; i < coordinationList.Count - 1; i++)
+            //{
+            //    //this指当前对象=>ship
+            //    if (this.ShipCoord.XCoord == coordinationList[i].XCoord && this.ShipCoord.YCoord == coordinationList[i].YCoord)
+            //    {
+            //        return false;
+            //    }
+            //}
+            ////八次都没找到，返回true,继续移动
+            //return true;
             ////bool b = coordinationList
             //        .SkipLast(1)
             //        .Any(x => x.XCoord == ship.ShipCoord.XCoord && x.YCoord == ship.ShipCoord.YCoord);

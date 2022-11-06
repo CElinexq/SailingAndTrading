@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 Stopwatch sw = Stopwatch.StartNew();
 //从XML文档，Service类中获取 15个岛屿坐标
-List<Coordination> coordinationList=Service.GetXMlInfo();
+List<Coordination> coordinationList=Service.GetIslandCoordInfo();
 
 //新建一条船，放入船坐标
 Ship ship = new Ship();
@@ -24,7 +24,7 @@ while (flag)
     /*每步移动后 都检查船只和岛屿的位置是否一致，来判断是否已经进入某个岛屿,
      *如果位置重合，flag为false 跳出移动循环，进入新的界面
     */
-    flag = ship.InIsland(coordinationList); 
+    flag = ship.InIsland(Service.GetIslandsInfo()); 
 }
 ConsoleClear();
 Console.WriteLine("欢迎来到侏罗纪");
