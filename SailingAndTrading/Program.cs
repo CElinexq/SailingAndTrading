@@ -1,9 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using SailingAndTrading;
+using System.Diagnostics;
 using System.Text;
 using System.Xml.Linq;
 
 
+Stopwatch sw = Stopwatch.StartNew();
 //从XML文档，Service类中获取 15个岛屿坐标
 List<Coordination> coordinationList=Service.GetXMlInfo();
 
@@ -38,6 +40,7 @@ Console.WriteLine("欢迎来到侏罗纪");
 //Console.WriteLine(myxml.Document.ToString()); 
 void ConsoleClear()
 {
+    sw.Restart();
     StringBuilder sb = new StringBuilder();
     for (int i = 0; i < 80; i++)
     {
@@ -46,5 +49,6 @@ void ConsoleClear()
     Console.SetCursorPosition(0, 0);
     Console.Write(sb.ToString());
     Console.SetCursorPosition(0, 0);
+    Debug.WriteLine(sw.ElapsedMilliseconds);
 }
 
