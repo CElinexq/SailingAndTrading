@@ -32,22 +32,22 @@ namespace SailingAndTrading
             return productList;
         }
 
-            /// <summary>
-            /// 用Linq获取XML文档信息，并获取岛屿的5个信息
-            /// </summary>
-            /// <returns>获得15个岛屿所有信息</returns>
-            public static List<Island> GetAllIslandsInfo()
+        /// <summary>
+        /// 用Linq获取XML文档信息，并获取岛屿的5个信息
+        /// </summary>
+        /// <returns>获得15个岛屿所有信息</returns>
+        public static List<Island> GetAllIslandsInfo()
         {
             List<Island> islandList = new List<Island>();
             string filePath = @"RawData\IslandRawData.xml";
             XElement xe = XElement.Load(filePath); //加载XMl文档，获得根元素Islands
-            IEnumerable<XElement> islandListXe=xe.Descendants("Island"); //找出根元素Islands所有子类元素Island，放入集合list
+            IEnumerable<XElement> islandListXe = xe.Descendants("Island"); //找出根元素Islands所有子类元素Island，放入集合list
             foreach (XElement ele in islandListXe)
             {
-                Island island = new Island((int)ele.Element("Id"), 
-                    (string)ele.Element("Name"), 
-                    (string)ele.Element("Information"), 
-                    (string)ele.Element("AllSellingProduct"), 
+                Island island = new Island((int)ele.Element("Id"),
+                    (string)ele.Element("Name"),
+                    (string)ele.Element("Information"),
+                    (string)ele.Element("AllSellingProduct"),
                     ToCoordiantnion((int)ele.Element("Coordination").Element("XCoord"), (int)ele.Element("Coordination").Element("YCoord")));
                 islandList.Add(island);
             }
@@ -62,7 +62,7 @@ namespace SailingAndTrading
         static Coordination ToCoordiantnion(int x, int y)
         {
             char c = '0';
-            Coordination co=new Coordination(x,y,c);
+            Coordination co = new Coordination(x, y, c);
             return co;
         }
         /// <summary>
@@ -74,11 +74,11 @@ namespace SailingAndTrading
             List<Coordination> coordinationList = new List<Coordination>();
             foreach (Island island in GetAllIslandsInfo())
             {
-                Coordination c=island.Coordination;
+                Coordination c = island.Coordination;
                 coordinationList.Add(c);
             }
             return coordinationList;
-            
+
         }
 
     }

@@ -9,17 +9,20 @@ Stopwatch sw = Stopwatch.StartNew();
 //从XML文档，Service类中获取 15个岛屿坐标
 List<Coordination> coordinationList=Service.GetIslandCoordInfo();
 
-//新建一条船，放入船坐标
+//新建一条船，船只坐标放入地图
 Ship ship = new Ship();
 coordinationList.Add(ship.ShipCoord);
 //显示 船只初始 位置
 Map.ShowMap(coordinationList);
 //移动箭头 改变 船坐标 位置
 bool flag = true;
+int count=0;
 while (flag)
 {
     ship.ShipMoving(Console.ReadKey());
+    count++;
     ConsoleClear();
+Console.WriteLine($"船只移动次数：{count}");
     Map.ShowMap(coordinationList);
     /*每步移动后 都检查船只和岛屿的位置是否一致，来判断是否已经进入某个岛屿,
      *如果位置重合，flag为false 跳出移动循环，进入新的界面
@@ -33,7 +36,7 @@ var island = ship.InIsland(Service.GetAllIslandsInfo()).island;
 Console.WriteLine($"欢迎来到{island.Name}");
 Console.WriteLine(island.Information);
 //获取岛屿提供的商品信息
-Console.WriteLine("商品名称");
+Console.WriteLine("商品名称：");
 List<Product> ps=island.AllSellingProduct;
 foreach (Product product in ps)
 {
