@@ -24,12 +24,25 @@ while (flag)
     /*每步移动后 都检查船只和岛屿的位置是否一致，来判断是否已经进入某个岛屿,
      *如果位置重合，flag为false 跳出移动循环，进入新的界面
     */
-    flag = ship.InIsland(Service.GetIslandsInfo()); 
+    flag = ship.InIsland(Service.GetAllIslandsInfo()).isTrue; 
 }
 ConsoleClear();
-Console.WriteLine("欢迎来到侏罗纪");
 
 //进入岛屿后，显示岛屿信息
+var island = ship.InIsland(Service.GetAllIslandsInfo()).island;
+Console.WriteLine($"欢迎来到{island.Name}");
+Console.WriteLine(island.Information);
+//获取岛屿提供的商品信息
+Console.WriteLine("商品名称");
+List<Product> ps=island.AllSellingProduct;
+foreach (Product product in ps)
+{
+    Console.WriteLine(product.Name);
+}
+
+
+
+
 
 
 

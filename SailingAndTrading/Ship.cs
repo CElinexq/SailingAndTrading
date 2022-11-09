@@ -49,17 +49,18 @@ namespace SailingAndTrading
             }
         }
 
-        //坐标一致，进入岛
-        public bool InIsland(List<Island> islandList)
+        //船坐标和任一岛屿位置一致，进入岛
+        public (bool isTrue,Island island) InIsland(List<Island> islandList)//返回值有两个用元组
         {
             foreach (var island in islandList)
             {
                 if (this.ShipCoord.XCoord == island.Coordination.XCoord && this.ShipCoord.YCoord == island.Coordination.YCoord)
                 {
-                    return false;
+                    
+                    return (false,island);
                 }
             }
-            return true;
+            return (true, null);
 
             ////8个岛屿位置和船坐标match,如果一致，返回false，进入岛屿
             //for (int i = 0; i < coordinationList.Count - 1; i++)

@@ -30,10 +30,17 @@ namespace SailingAndTrading
         /// <returns></returns>
         private List<Product> textToAllSellingProduct(string s)
         {
+            List<Product> productList = Service.GetAllProductInfo();
+            List<Product> products = new List<Product>();
+            string[] stringList=s.Split(',');
+            foreach (string str in stringList)
+            {
+                Product p = productList.Where(x => x.Id == int.Parse(str)).First();
+                products.Add(p);
+            }
+            return products;
             //TODO:  将XElement Island信息<AllSellingProduct> 的string信息 转换成 list
-            //throw new NotImplementedException();
-            return new List<Product>();
-        
+            //throw new NotImplementedException();       
         }
 
     }

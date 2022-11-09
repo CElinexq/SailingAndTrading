@@ -3,7 +3,7 @@
 	<Island>
 		<Id>1</Id>
 		<Name>福州</Name>
-		<Information>欢迎来到福州！顺便问一下，你这船带人偷渡吗？</Information>
+		<Information>顺便问一下，你这船带人偷渡吗？</Information>
 		<AllSellingProduct>1,10,3,8,5,2</AllSellingProduct>
 		<Coordination>
 			<XCoord>4</XCoord>
