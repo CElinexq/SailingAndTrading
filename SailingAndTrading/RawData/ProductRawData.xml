@@ -6,6 +6,7 @@
 		<Space>3</Space>
 		<Weight>1</Weight>
 		<SourceIsland>1</SourceIsland>
+		<BasePrice>1000</BasePrice>
 	</Product>
 	<Product>
 		<Id>2</Id>
@@ -13,6 +14,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>2</SourceIsland>
+		<BasePrice>800</BasePrice>
 	</Product>
 	<Product>
 		<Id>3</Id>
@@ -20,6 +22,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>2</SourceIsland>
+		<BasePrice>1600</BasePrice>
 	</Product>
 	<Product>
 		<Id>4</Id>
@@ -27,6 +30,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>3</SourceIsland>
+		<BasePrice>300</BasePrice>
 	</Product>
 	<Product>
 		<Id>5</Id>
@@ -34,6 +38,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>4</SourceIsland>
+		<BasePrice>500</BasePrice>
 	</Product>
 	<Product>
 		<Id>6</Id>
@@ -41,6 +46,7 @@
 		<Space>2</Space>
 		<Weight>4</Weight>
 		<SourceIsland>5</SourceIsland>
+		<BasePrice>200</BasePrice>
 	</Product>
 	<Product>
 		<Id>7</Id>
@@ -48,6 +54,7 @@
 		<Space>2</Space>
 		<Weight>5</Weight>
 		<SourceIsland>6</SourceIsland>
+		<BasePrice>500</BasePrice>
 	</Product>
 	<Product>
 		<Id>8</Id>
@@ -55,6 +62,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>7</SourceIsland>
+		<BasePrice>400</BasePrice>
 	</Product>
 	<Product>
 		<Id>9</Id>
@@ -62,6 +70,7 @@
 		<Space>2</Space>
 		<Weight>4</Weight>
 		<SourceIsland>8</SourceIsland>
+		<BasePrice>350</BasePrice>
 	</Product>
 	<Product>
 		<Id>10</Id>
@@ -69,6 +78,7 @@
 		<Space>3</Space>
 		<Weight>3</Weight>
 		<SourceIsland>10</SourceIsland>
+		<BasePrice>2400</BasePrice>
 	</Product>
 	<Product>
 		<Id>11</Id>
@@ -76,6 +86,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>10</SourceIsland>
+		<BasePrice>400</BasePrice>
 	</Product>
 	<Product>
 		<Id>12</Id>
@@ -83,6 +94,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>11</SourceIsland>
+		<BasePrice>500</BasePrice>
 	</Product>
 	<Product>
 		<Id>13</Id>
@@ -90,6 +102,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>12</SourceIsland>
+		<BasePrice>1000</BasePrice>
 	</Product>
 	<Product>
 		<Id>14</Id>
@@ -97,6 +110,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>15</SourceIsland>
+		<BasePrice>800</BasePrice>
 	</Product>
 	<Product>
 		<Id>15</Id>
@@ -104,6 +118,7 @@
 		<Space>3</Space>
 		<Weight>2</Weight>
 		<SourceIsland>14</SourceIsland>
+		<BasePrice>3800</BasePrice>
 	</Product>
 	<Product>
 		<Id>16</Id>
@@ -111,6 +126,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>2</SourceIsland>
+		<BasePrice>1800</BasePrice>
 	</Product>
 	<Product>
 		<Id>17</Id>
@@ -118,6 +134,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>10</SourceIsland>
+		<BasePrice>800</BasePrice>
 	</Product>
 	<Product>
 		<Id>18</Id>
@@ -125,6 +142,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>11</SourceIsland>
+		<BasePrice>600</BasePrice>
 	</Product>
 	<Product>
 		<Id>19</Id>
@@ -132,6 +150,7 @@
 		<Space>2</Space>
 		<Weight>2</Weight>
 		<SourceIsland>8</SourceIsland>
+		<BasePrice>1200</BasePrice>
 	</Product>
 	<Product>
 		<Id>20</Id>
@@ -139,6 +158,7 @@
 		<Space>4</Space>
 		<Weight>3</Weight>
 		<SourceIsland>6</SourceIsland>
+		<BasePrice>400</BasePrice>
 	</Product>
 	<Product>
 		<Id>21</Id>
@@ -146,6 +166,7 @@
 		<Space>4</Space>
 		<Weight>2</Weight>
 		<SourceIsland>13</SourceIsland>
+		<BasePrice>1000</BasePrice>
 	</Product>
 	<Product>
 		<Id>22</Id>
@@ -153,6 +174,7 @@
 		<Space>1</Space>
 		<Weight>1</Weight>
 		<SourceIsland>10</SourceIsland>
+		<BasePrice>600</BasePrice>
 	</Product>
 	<Product>
 		<Id>23</Id>
@@ -160,6 +182,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>12</SourceIsland>
+		<BasePrice>1000</BasePrice>
 	</Product>
 	<Product>
 		<Id>24</Id>
@@ -167,6 +190,7 @@
 		<Space>2</Space>
 		<Weight>3</Weight>
 		<SourceIsland>4</SourceIsland>
+		<BasePrice>600</BasePrice>
 	</Product>
 	<Product>
 		<Id>25</Id>
@@ -174,6 +198,7 @@
 		<Space>2</Space>
 		<Weight>1</Weight>
 		<SourceIsland>12</SourceIsland>
+		<BasePrice>700</BasePrice>
 	</Product>
 	<Product>
 		<Id>26</Id>
@@ -181,6 +206,7 @@
 		<Space>3</Space>
 		<Weight>1</Weight>
 		<SourceIsland>5</SourceIsland>
+		<BasePrice>400</BasePrice>
 	</Product>
 	<Product>
 		<Id>27</Id>
@@ -188,6 +214,7 @@
 		<Space>3</Space>
 		<Weight>3</Weight>
 		<SourceIsland>14</SourceIsland>
+		<BasePrice>1800</BasePrice>
 	</Product>
 	<Product>
 		<Id>28</Id>
@@ -195,6 +222,7 @@
 		<Space>1</Space>
 		<Weight>1</Weight>
 		<SourceIsland>11</SourceIsland>
+		<BasePrice>400</BasePrice>
 	</Product>
 	<Product>
 		<Id>29</Id>
@@ -202,6 +230,7 @@
 		<Space>3</Space>
 		<Weight>1</Weight>
 		<SourceIsland>9</SourceIsland>
+		<BasePrice>3500</BasePrice>
 	</Product>
 	<Product>
 		<Id>30</Id>
@@ -209,5 +238,6 @@
 		<Space>3</Space>
 		<Weight>1</Weight>
 		<SourceIsland>9</SourceIsland>
+		<BasePrice>500</BasePrice>
 	</Product>
 </Products>
